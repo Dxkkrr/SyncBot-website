@@ -5,66 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Links -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style/loginPage.css">
 
     <!-- Remix Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
 
     <title>SyncBot Website</title>
 </head>
 
 <body>
 
-    <section class="login">
-        <div class="login__content">
-            <div>
-                <h2 class="login__title">Welcome to SyncBot</h2>
+<section class="login">
+    <div class="login__content">
 
-                <form action="" method="post" class="login__form">
-                    <div class="login__group">
+        <div>
+            <h2 class="login__title">Welcome to SyncBot</h2>
 
+            <form class="login__form">
 
-                        <div class="login__box">
-                            <i class="ri-mail-fill login__icon"></i> <!-- Icon -->
-                            <input type="email" name="" autocomplete="" required placeholder=" " class="login__input"
-                                id="">
-                            <label for="email" class="login__label">Email</label>
-                        </div>
+                <button type="button" id="discord-login" class="login__button">
+                    <i class="ri-discord-fill"></i> Login with Discord
+                </button>
 
-                        <div class="login__box">
-                            <i class="ri-lock-2-fill login__icon"></i> <!-- Icon -->
-                            <input type="password" name="" autocomplete="" required placeholder=" " class="login__input"
-                                id="">
-                            <label for="password" class="login__label">Password</label>
-                        </div>
-                    </div>
+                <p class="login__sign">
+                    Login using your Discord account
+                </p>
 
-                    <a href="#" class="login__forgot">Forgot Password?</a>
-
-                    <button type='submit' class="login__button">
-                        Sign In <i class="ri-send-plane-2-fill"></i>
-                    </button>
-
-                    <p class="login__sign">
-                        Don't have an account? <a href="#">Sign Up</a>
-                    </p>
-                </form>
-            </div>
-
-            <div class="login__image">
-                <img src="images/LogoGif.gif" alt="login_image" class="login__img">
-            </div>
+            </form>
         </div>
-    </section>
 
-    <!-- Supabase -->
-     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+        <div class="login__image">
+            <img src="images/LogoGif.gif" alt="login_image" class="login__img">
+        </div>
 
-    <!-- Main Js -->
-    <script src="js/script.js"></script>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="js/main.js"></script>
+
 </body>
-
 </html>
