@@ -9,12 +9,18 @@
     --text-color: hsl(0, 0%, 55%);
     --body-color: hsl(0, 0%, 4%);
     --container-color: hsl(0, 0%, 8%);
-    
+
     /* Fonte e tipografia */
     --body-font: "Syne", sans-serif;
     --big-font-size: 1.5rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
+
+    /* Transições */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
 }
 
 /* Tipografia Reponsiva */
@@ -32,3 +38,20 @@
     box-sizing: border-box;
     font-family: 'Syne', sans-serif;
 }
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: var(--title-color);
+}
+
+.sidebar .image-text .img{
+    width: 40px;
+    border-radius: 6xp;
+}
+
+/* sidebar video */
+/* https://www.youtube.com/watch?v=bFvfqUMjvsA&list=PLImJ3umGjxdCjoBGj1eGQwcopR0P0edAK */
